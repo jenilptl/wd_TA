@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Designer Portfolio</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    color: #222;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+  }
+
+  .logo {
+    border: 2px solid #ff3d3d;
+    color: #ff3d3d;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 6px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .search-box {
+    display: flex;
+  }
+
+  .search-box input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+
+  .search-box button {
+    padding: 8px 15px;
+    background-color: #ff3d3d;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 60px;
+  }
+
+  .hero-text {
+    max-width: 450px;
+  }
+
+  .hero-text p.greet {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+
+  .hero-text p.desc {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+  }
+
+  .btn-hire {
+    background-color: #ff3d3d;
+    color: #fff;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .hero-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* Brands Section */
+  .brands {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #ffffff;
+  }
+
+  .brands span {
+    font-size: 20px;
+    color: #999;
+    font-weight: bold;
+  }
+
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #ffffff;
+  }
+
+  .stats-left {
+    text-align: left;
+  }
+
+  .stats-left h2 {
+    font-size: 60px;
+    color: #222;
+  }
+
+  .stats-left p {
+    color: #777;
+    margin-top: 10px;
+  }
+
+  .stats-right {
+    max-width: 600px;
+  }
+
+  .stats-right h3 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .cards {
+    display: flex;
+    gap: 20px;
+  }
+
+  .card {
+    background-color: #f4f4f4;
+    padding: 25px 20px;
+    border-radius: 8px;
+    width: 160px;
+  }
+
+  .card.dark {
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+
+  .card-icon {
+    background-color: #ff3d3d;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .card p.title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .card p.link {
+    font-size: 13px;
+    color: #ff3d3d;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">B.</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Intro</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-box">
+      <input type="text" placeholder="Enter Keyword...">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="greet">Hi, I'm Mary Ateer</p>
+      <h1>DESIGNER</h1>
+      <p class="desc">I love to work in UI/UX designing. I always try my best to make good UI with the best UX.</p>
+      <button class="btn-hire">Hire Me</button>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop" alt="Designer photo">
+    </div>
+  </section>
+
+  <section class="brands">
+    <span>PayPal</span>
+    <span>Google</span>
+    <span>SAMSUNG</span>
+    <span>Lenovo</span>
+    <span>amazon</span>
+  </section>
+
+  <section class="stats">
+    <div class="stats-left">
+      <h2>22</h2>
+      <p>Years Of Experience<br>Working</p>
+    </div>
+    <div class="stats-right">
+      <h3>I'm a designer & developer with a passion for web design</h3>
+      <div class="cards">
+        <div class="card dark">
+          <div class="card-icon">💡</div>
+          <p class="title">Creative Design</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💻</div>
+          <p class="title">Web Design</p>
+          <p class="link">Explore More →</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <p class="title">Brand Identity</p>
+          <p class="link">Explore More →</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

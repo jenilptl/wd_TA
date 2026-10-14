@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+
+    <style>
+        .green {
+            color: #00b894;
+        }
+
+        .badge {
+            background-color: #00b894;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form class="green">
+
+        <table align="center" cellspacing="5" cellpadding="10">
+
+            <tr>
+                <td colspan="2" align="center">
+                    <h1>Create Account</h1>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                    <font class="green"><b>First name *</b></font><br>
+                    <input type="text" placeholder="enter your first name" size="30">
+
+                </td>
+
+                <td>
+
+                    <font class="green"><b>Last name</b></font><br>
+                    <input type="text" placeholder="enter your last name" size="30">
+
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+
+                    <font class="green"><b>Email*</b></font><br>
+                    <input type="email" placeholder="enter your email" size="75">
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                    <font class="green"><b>Password *</b></font><br>
+                    <input type="password" placeholder="enter your password" size="30">
+
+                </td>
+
+                <td>
+
+                    <font class="green"><b>Confirm Password *</b></font><br>
+                    <input type="password" placeholder="enter your password again" size="30">
+
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <font class="green"><b>Gender:</b></font><br>
+
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+
+                </td>
+
+                <td>
+
+                    <font class="green"><b>Hobbies</b></font><br>
+
+                    <input type="checkbox">Music
+                    <input type="checkbox">Sports
+                    <input type="checkbox">Travel
+                    <input type="checkbox">Movies
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <font class="green"><b>Source of Income</b></font><br>
+
+                    <select>
+                        <option>Employed</option>
+                        <option>Business</option>
+                        <option>Student</option>
+                    </select>
+
+                </td>
+
+                <td>
+
+                    <font class="green"><b>Income</b></font><br>
+
+                    <input type="range" min="0" max="100" value="20" oninput="income.value = this.value + 'K'">
+
+                    <output id="income" class="badge">20K</output>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <font class="green"><b>Upload Profile Picture</b></font><br>
+
+                    <input type="file">
+
+                </td>
+
+                <td>
+
+                    <font class="green"><b>Age</b></font><br>
+
+                    <input type="number" value="18" min="13">
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="2">
+
+                    <font class="green"><b>Bio</b></font><br>
+
+                    <textarea rows="6" cols="70"></textarea>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="2" align="right">
+
+                    <input type="submit" value="Create">
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>

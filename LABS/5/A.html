@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Demonstrate HTML5 Semantic Tags and Form Validations and Multimedia tags. -->
+
+    <!-- 1. Create an HTML5 page using semantic tags like <header>, <nav>, <main>, <article>, <section>,
+    and <footer> to structure the layout of a simple website. (A) -->
+
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Welcome</h2>
+            <p>This is the main section.</p>
+        </section>
+
+        <article>
+            <h2>Article</h2>
+            <p>This is an article.</p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+
+    <hr>
+
+    <!-- 2. Develop a contact form using HTML5 form elements such as <input type="email">, <input
+    type="tel">, <input type="date">, and <textarea>. (A) -->
+
+    <h2>Contact Form</h2>
+
+    <form>
+
+        Email :
+        <input type="email">
+        <br><br>
+
+        Phone :
+        <input type="tel">
+        <br><br>
+
+        Date :
+        <input type="date">
+        <br><br>
+
+        Message :
+        <br>
+        <textarea rows="5" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit">
+
+    </form>
+
+    <hr>
+
+    <!-- 3. Create an HTML form with fields like Name, Email, and Phone Number using the required
+    attribute to ensure the user cannot submit without filling them. (B) -->
+
+    <h2>Required Form</h2>
+
+    <form>
+
+        Name :
+        <input type="text" required>
+        <br><br>
+
+        Email :
+        <input type="email" required>
+        <br><br>
+
+        Phone :
+        <input type="tel" required>
+        <br><br>
+
+        <input type="submit">
+
+    </form>
+
+    <hr>
+
+    <!-- 4. Design a registration form that uses type="email", type="number" and pattern attributes to validate
+    email format, number ranges, and custom patterns (e.g., password rules). (B)
+    Create a feedback form where minlength, maxlength, min, and max attributes are used to control
+    input length and numerical value range. (C) -->
+
+    <h2>Registration Form</h2>
+
+    <form>
+
+        Email :
+        <input type="email">
+        <br><br>
+
+        Age :
+        <input type="number" min="18" max="60">
+        <br><br>
+
+        Password :
+        <input type="password" pattern="[A-Za-z0-9]{6,}">
+        <br><br>
+
+        Feedback :
+        <textarea minlength="10" maxlength="100"></textarea>
+        <br><br>
+
+        <input type="submit">
+
+    </form>
+
+    <hr>
+
+    <!-- 5. Develop a webpage that embeds an audio file using the <audio> tag with controls, autoplay, and
+    loop attributes. -->
+
+    <h2>Audio</h2>
+
+    <audio controls autoplay loop>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <hr>
+
+    <!-- 6. Design an HTML page that displays a video using the <video> tag with features like controls,
+    poster image, and multiple source formats. -->
+
+    <h2>Video</h2>
+
+    <video width="400" controls poster="poster.jpg">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+    </video>
+
+</body>
+</html>

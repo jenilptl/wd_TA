@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 13 - Part A</title>
+
+    <style>
+        /* //1 */
+        .link{
+            color: orange;
+        }
+            
+        .link:visited {
+            color: rgb(0, 30, 255);
+        }
+
+        /* //2 */
+        .para::first-line {
+            color: blue;
+            font-size: 20px;
+        }
+
+        /* //3 */
+        .para::first-letter {
+            color: green;
+            font-size: 30px;
+        }
+
+        /* //4 */
+        .select::selection {
+            background-color: yellow;
+        }
+
+        /* //5 */
+        .hover:hover {
+            color: purple;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- //1 -->
+    <a class="link" href="https://ex.com">Test Link</a>
+
+    <br><br>
+
+    <!-- //2 and //3 -->
+    <p class="para">
+        This is the first line of the paragraph.<br>
+        This is the second line of the paragraph.
+    </p>
+
+    <!-- //4 -->
+    <p class="select">
+        Select this text to see the yellow background color.
+    </p>
+
+    <!-- //5 -->
+    <div class="hover">
+        Move your mouse over this text.
+    </div>
+
+</body>
+</html>

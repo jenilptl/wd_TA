@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Alea Portfolio</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    color: #222;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #a385e0;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .logo-circle {
+    background-color: #6b3fd4;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .btn-talk {
+    background-color: #6b3fd4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  /* Hero Section */
+  .hero {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+  }
+
+  .hero h1 span {
+    color: #6b3fd4;
+  }
+
+  .hero-image-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image-wrap img {
+    width: 240px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 120px;
+  }
+
+  .badge {
+    position: absolute;
+    background-color: #6b3fd4;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-align: left;
+  }
+
+  .badge p.role {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .badge p.years {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+
+  .badge-left {
+    left: 20%;
+    top: 30px;
+  }
+
+  .badge-right {
+    right: 20%;
+    bottom: 40px;
+  }
+
+  /* Social Bar */
+  .social-bar {
+    background-color: #1c1a2e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 60px;
+  }
+
+  .social-bar span {
+    color: #cccccc;
+    font-size: 18px;
+  }
+
+  /* About Section */
+  .about {
+    background-color: #a385e0;
+    padding: 60px;
+  }
+
+  .about-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .about-top h2 {
+    color: #fff;
+    font-size: 42px;
+  }
+
+  .about-top p {
+    color: #f0f0f0;
+    max-width: 400px;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .stat-number {
+    background-color: #6b3fd4;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stat p {
+    color: #fff;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="logo-circle">A</div>
+      Alea
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </nav>
+    <button class="btn-talk">Let's Talk</button>
+  </header>
+
+  <section class="hero">
+    <h1>I'm <span>Alea</span>. I will create a web design that can give value to your company</h1>
+
+    <div class="hero-image-wrap">
+      <div class="badge badge-left">
+        <p class="role">UI/UX Designer</p>
+        <p class="years">4 Years</p>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=500&fit=crop" alt="Alea photo">
+
+      <div class="badge badge-right">
+        <p class="role">Web Developer</p>
+        <p class="years">2 Years</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-bar">
+    <span>dribbble</span>
+    <span>LinkedIn</span>
+    <span>Medium</span>
+    <span>Behance</span>
+  </section>
+
+  <section class="about">
+    <div class="about-top">
+      <h2>About<br>Me.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-number">4K</div>
+        <p>Projects Done</p>
+      </div>
+      <div class="stat">
+        <div class="stat-number">2K</div>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat">
+        <div class="stat-number">9K</div>
+        <p>Clients on Worldwide</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+
+        div{
+            width:100px;
+            height:100px;
+            margin:20px;
+            position:relative;
+        }
+
+        /* 1. Background Color */
+
+        .box1{
+            background:red;
+            animation:color 3s;
+        }
+
+        @keyframes color{
+            from{background:red;}
+            to{background:yellow;}
+        }
+
+        /* 2. Move Left, Right, Bottom, Left, Top */
+
+        .box2{
+            background:blue;
+            animation:move 5s;
+        }
+
+        @keyframes move{
+
+            0%{left:0px;top:0px;}
+            25%{left:200px;top:0px;}
+            50%{left:200px;top:200px;}
+            75%{left:0px;top:200px;}
+            100%{left:0px;top:0px;}
+
+        }
+
+        /* 3. Animation Delay */
+
+        .box3{
+            background:green;
+            animation:delay 3s;
+            animation-delay:2s;
+        }
+
+        @keyframes delay{
+            from{left:0px;}
+            to{left:200px;}
+        }
+
+        /* 4. Infinite Animation */
+
+        .box4{
+            background:orange;
+            animation:infinite 3s infinite;
+        }
+
+        @keyframes infinite{
+            from{left:0px;}
+            to{left:200px;}
+        }
+
+        /* 5. Reverse Direction */
+
+        .box5{
+            background:pink;
+            animation:reverse 3s infinite reverse;
+        }
+
+        @keyframes reverse{
+            from{left:0px;}
+            to{left:200px;}
+        }
+
+        /* 6. Timing Function */
+
+        .box6{
+            background:purple;
+            animation:speed 4s infinite;
+            animation-timing-function:ease-in-out;
+        }
+
+        @keyframes speed{
+            from{left:0px;}
+            to{left:200px;}
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!-- Create web pages with given animation effects
+
+Part: A
+
+1. Changing the background color of the div from red to yellow.
+2. Moving div from Left to right, right to bottom, bottom to left, and left to top.
+3. Put a delay of 2s in the animation.
+4. Change the animation-iteration count property of the program to run infinitely.
+5. Change the animation direction property to run it in reverse order.
+6. Change the value of the animation-timing-function property to change the speed of the
+animation -->
+
+<h3>1. Background Color</h3>
+<div class="box1"></div>
+
+<h3>2. Move Div</h3>
+<div class="box2"></div>
+
+<h3>3. Animation Delay</h3>
+<div class="box3"></div>
+
+<h3>4. Infinite Animation</h3>
+<div class="box4"></div>
+
+<h3>5. Reverse Direction</h3>
+<div class="box5"></div>
+
+<h3>6. Animation Timing Function</h3>
+<div class="box6"></div>
+
+</body>
+</html>

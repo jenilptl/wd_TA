@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo-Class Demonstration</title>
+
+    <style>
+        /* 1. :valid and :invalid */
+        input:valid {
+            border: 3px solid green;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+        }
+
+        /* 2. :active */
+        button:active {
+            background-color: rgb(28, 224, 28);
+            color: white;
+        }
+
+        /* 3. :focus */
+        input:focus,
+        button:focus {
+            outline: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>1. Form Validation using :valid and :invalid</h3>
+    <form>
+        Email:
+        <input type="email" required><br><br>
+
+        Password:
+        <input type="password" minlength="6" required>
+    </form>
+
+    <hr>
+
+    <h3>2. Active State using :active</h3>
+    <button>Submit</button>
+
+    <hr>
+
+    <h3>3. Focus State using :focus</h3>
+    <p>Use TAB key to move focus:</p>
+    <input type="text" placeholder="Enter name"><br><br>
+    <button>Click</button>
+
+</body>
+</html>

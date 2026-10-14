@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients</title>
+
+    <style>
+        * {
+            margin: 7px;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box1 {
+            width: 350px;
+            height: 250px;
+            border: 1px solid black;
+            background: linear-gradient(to left, red, green);
+        }
+
+        .box2 {
+            width: 350px;
+            height: 250px;
+            border: 1px solid black;
+            background: radial-gradient(circle at 50% 20%, red, yellow, green);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="box1"></div>
+
+        <div class="box2"></div>
+
+    </div>
+
+</body>
+
+</html>

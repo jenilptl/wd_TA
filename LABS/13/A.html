@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>You Dont Know JavaScript</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Courier New', monospace;
+    color: #222222;
+  }
+
+  /* Nav */
+  nav {
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 14px;
+  }
+
+  /* Main section */
+  .main-section {
+    background-color: #f0efe9;
+    padding: 60px 40px;
+  }
+
+  .main-section h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+
+  .content-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  /* Book Cover */
+  .book-cover {
+    width: 210px;
+    border: 1px solid #cccccc;
+  }
+
+  .book-top {
+    background-color: #d8d8d8;
+    padding: 10px;
+  }
+
+  .book-top .oreilly {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px 6px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .book-top p {
+    font-size: 10px;
+    font-style: italic;
+    line-height: 13px;
+    margin-bottom: 8px;
+  }
+
+  .book-top .author-quote {
+    font-size: 10px;
+    color: #333333;
+  }
+
+  .book-middle {
+    background-color: #ffffff;
+    padding: 15px 12px;
+  }
+
+  .book-middle .author-name {
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+
+  .book-middle h2 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .book-bottom {
+    background-color: #f4d13d;
+    padding: 20px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 150px;
+  }
+
+  .vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .js-text {
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 60px;
+  }
+
+  /* Text content */
+  .text-content p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .btn-order {
+    background-color: #f2994a;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Footer offer */
+  .offer-section {
+    background-color: #0e1c2f;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .offer-section p {
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .btn-offer {
+    background-color: #f2994a;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">The book series</a>
+    <a href="#">Testimonials</a>
+    <a href="#">The Author</a>
+    <a href="#">Free resources</a>
+  </nav>
+
+  <section class="main-section">
+    <h1>You dont know JavaScript</h1>
+
+    <div class="content-row">
+
+      <div class="book-cover">
+        <div class="book-top">
+          <span class="oreilly">O'REILLY</span>
+          <p class="author-quote">"What you strive to comprehend your code, you create better work and become better at what you do. This code isn't just your job anymore, it's your craft. This is why I love (Up &amp; Going)"</p>
+        </div>
+        <div class="book-middle">
+          <p class="author-name">KYLE SIMPSON</p>
+          <h2>COMPLETE<br>SERIES</h2>
+        </div>
+        <div class="book-bottom">
+          <span class="vertical-text">YOU DONT KNOW</span>
+          <span class="js-text">JS</span>
+        </div>
+      </div>
+
+      <div class="text-content">
+        <p>Don't just drift through Javascript.</p>
+        <p>Understand how Javascript works</p>
+        <p>Start your journey through the bumpy side of Javascript</p>
+        <button class="btn-order">ORDER YOUR COPY NOW</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="offer-section">
+    <p>The first ebook in the book series is absolutely free.</p>
+    <button class="btn-offer">FIND OUT MORE ABOUT THIS OFFER</button>
+  </section>
+
+</body>
+</html>

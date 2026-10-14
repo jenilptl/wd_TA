@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.html</title>
+
+    <style>
+
+        /* 1. Hover effect for links inside container */
+
+        .menu a{
+            color:blue;
+            text-decoration:none;
+            margin-right:15px;
+        }
+
+        .menu a:hover{
+            color:red;
+        }
+
+        /* 2. Focus on input fields */
+
+        input:focus{
+            background:yellow;
+        }
+
+        /* 3. Highlight table row on hover */
+
+
+        td,th{
+            border:1px solid black;
+            padding:10px;
+        }
+
+        tr:hover{
+            background:lightgreen;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!-- 1. Using the :hover pseudo-class to change the appearance of links when hovered over,
+but limited to links within a specific container. -->
+
+<h3>1. Hover on Links</h3>
+
+<div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</div>
+
+<hr>
+
+<!-- 2. Applying styles to input fields when they receive focus using the :focus pseudo-class. -->
+
+<h3>2. Input Focus</h3>
+
+<input type="text" placeholder="Enter Name">
+<br><br>
+<input type="email" placeholder="Enter Email">
+
+<hr>
+
+<!-- 3. Utilize the :hover pseudo-class to highlight table rows when hovered over. -->
+
+<h3>3. Table Row Hover</h3>
+
+<table>
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>City</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Jenil</td>
+        <td>Rajkot</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Yash</td>
+        <td>Ahmedabad</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Harsh</td>
+        <td>Surat</td>
+    </tr>
+
+</table>
+
+</body>
+</html>

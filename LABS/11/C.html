@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.html</title>
+
+    <style>
+
+        /* 1. Valid and Invalid */
+
+        input:valid{
+            border:2px solid green;
+        }
+
+        input:invalid{
+            border:2px solid red;
+        }
+
+        /* 2. Active Button */
+
+        button:active{
+            background:red;
+            color:white;
+        }
+
+        /* 3. Focus */
+
+        input:focus{
+            background:yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!-- 1. Employing pseudo-classes such as :valid and :invalid to style form elements based on their
+validation status, aiding in providing feedback to users during form submission. -->
+
+<h3>1. Valid and Invalid</h3>
+
+<form>
+
+    Email :
+    <input type="email" required>
+    <br><br>
+
+    Mobile :
+    <input type="text" pattern="[0-9]{10}" required>
+
+</form>
+
+<hr>
+
+<!-- 2. Applying pseudo-classes like :active to interactive elements such as buttons and toggles to
+visually indicate user interaction when activated or clicked. -->
+
+<h3>2. Active Button</h3>
+
+<button>Click Me</button>
+
+<hr>
+
+<!-- 3. Using pseudo-classes such as :focus to improve accessibility by indicating the currently focused
+element, aiding users who navigate through a website using keyboard-only inputs. -->
+
+<h3>3. Focus</h3>
+
+<input type="text" placeholder="Enter Name">
+
+</body>
+</html>
