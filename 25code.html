@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Lab Practical</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <!-- 1. Centered Blog Title and Subtitle -->
+    <div class="text-center">
+        <h1 class="text-3xl font-bold">My Blog</h1>
+        <p class="text-lg">Welcome to my blog</p>
+    </div>
+
+
+    <!-- 2. Card with Heading, Paragraph and Button -->
+    <div class="p-4">
+        <h2 class="text-2xl font-bold mb-2">Student Card</h2>
+        <p class="mb-4">This is a student learning card.</p>
+        <button class="p-2">Read More</button>
+    </div>
+
+
+    <!-- 3. Pricing Card -->
+    <div class="p-4 text-center">
+        <h2 class="text-xl font-bold">Premium Plan</h2>
+        <p class="text-4xl font-bold">$49</p>
+        <p>Per Month</p>
+    </div>
+
+
+    <!-- 4. Italic Quote with Line Height -->
+    <div class="p-4">
+        <p class="italic leading-relaxed">
+            "Success is not final, failure is not fatal.
+            It is the courage to continue that counts."
+        </p>
+    </div>
+
+
+    <!-- 5. Navigation Links with Equal Spacing -->
+    <nav class="flex gap-6">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+
+    <!-- 6. User Name, Role and Description -->
+    <div class="p-4">
+        <h2 class="text-xl font-bold">Jenil Patel</h2>
+        <p class="mt-2">Computer Science Student</p>
+        <p class="mt-2">Interested in programming and web development.</p>
+    </div>
+
+
+    <!-- 7. Heading Styles H1 to H6 -->
+    <div>
+        <h1 class="text-4xl">Heading H1</h1>
+        <h2 class="text-3xl">Heading H2</h2>
+        <h3 class="text-2xl">Heading H3</h3>
+        <h4 class="text-xl">Heading H4</h4>
+        <h5 class="text-lg">Heading H5</h5>
+        <h6 class="text-base">Heading H6</h6>
+    </div>
+
+
+    <!-- 8. Newsletter Signup Box -->
+    <div class="p-4">
+        <h2 class="text-2xl mb-2">Newsletter Signup</h2>
+        <p class="mb-4">Subscribe to receive latest updates.</p>
+        <input type="email" placeholder="Enter your email" class="p-2">
+        <button class="p-2">Subscribe</button>
+    </div>
+
+
+    <!-- 9. Two Paragraphs Side by Side -->
+    <div class="grid grid-cols-2 gap-4">
+        <p class="leading-relaxed">
+            Frontend development focuses on designing
+            and creating the visual part of websites
+            using HTML, CSS and JavaScript.
+        </p>
+
+        <p class="leading-relaxed">
+            Backend development handles server-side
+            operations, databases and application
+            functionality.
+        </p>
+    </div>
+
+
+</body>
+</html>

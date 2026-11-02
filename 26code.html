@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Sizing Lab</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <!-- 1. Three Image Gallery -->
+    <div class="grid grid-cols-1 sm:grid-cols-3">
+        <img src="image1.jpg" class="w-full">
+        <img src="image2.jpg" class="w-full">
+        <img src="image3.jpg" class="w-full">
+    </div>
+
+
+    <!-- 2. Product Card with Fixed Size -->
+    <div class="w-64 h-80">
+        <img src="product.jpg" class="w-full h-48">
+        <h2>Product Name</h2>
+        <p>Product Description</p>
+    </div>
+
+
+    <!-- 3. Left Sidebar and Right Content -->
+    <div class="flex">
+        <aside class="w-1/4">
+            <h2>Sidebar</h2>
+            <p>Menu Items</p>
+        </aside>
+
+        <main class="w-3/4">
+            <h2>Main Content</h2>
+            <p>This is the main content section.</p>
+        </main>
+    </div>
+
+
+    <!-- 4. Three Square Boxes of Different Sizes -->
+    <div class="flex gap-4">
+        <div class="w-20 h-20">Box 1</div>
+        <div class="w-32 h-32">Box 2</div>
+        <div class="w-40 h-40">Box 3</div>
+    </div>
+
+
+    <!-- 5. Full Screen Height Banner -->
+    <div class="h-screen flex justify-center items-center">
+        <h1>Welcome to My Website</h1>
+    </div>
+
+
+    <!-- 6. Text Box with Minimum and Maximum Width -->
+    <div class="min-w-64 max-w-xl">
+        <p>
+            This is a responsive text box with minimum
+            and maximum width.
+        </p>
+    </div>
+
+
+    <!-- 9. Profile Image Placeholder -->
+    <div>
+        <img src="profile.jpg" class="w-32 h-32">
+    </div>
+
+
+    <!-- 10. Responsive Video Container with 16:9 Ratio -->
+    <div class="w-full aspect-video">
+        <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            class="w-full h-full"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
