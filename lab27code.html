@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Background, Borders, Effects and Filters</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- 1. Create a hero banner with a left-to-right gradient background. -->
+
+    <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-72 flex items-center justify-center">
+
+        <h1 class="text-5xl text-white font-bold">
+            Welcome
+        </h1>
+
+    </div>
+
+    <hr class="my-8">
+
+    <!-- 2. Create a card with a background image and white text overlay. -->
+
+    <div class="w-80 h-56 mx-auto bg-cover bg-center flex items-end p-4 text-white"
+        style="background-image: url('https://picsum.photos/400/300');">
+
+        <div>
+
+            <h2 class="text-2xl font-bold">
+                Nature
+            </h2>
+
+            <p>
+                Beautiful Scenery
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr class="my-8">
+
+    <!-- 3. Create a glass-effect card on top of a colorful background. -->
+
+    <div class="bg-gradient-to-r from-pink-500 to-yellow-400 p-10">
+
+        <div class="w-80 mx-auto p-6 bg-white/30 backdrop-blur-md rounded-lg border">
+
+            <h2 class="text-2xl font-bold">
+                Glass Card
+            </h2>
+
+            <p class="mt-3">
+                This is a simple glass effect using Tailwind.
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr class="my-8">
+
+    <!-- 4. Create an image that becomes blurred when hovered. -->
+
+    <h2 class="text-2xl text-center font-bold">
+        Hover Blur Image
+    </h2>
+
+    <img src="https://picsum.photos/300/200" class="mx-auto mt-6 hover:blur-sm">
+
+    <hr class="my-8">
+
+    <!-- 5. Create three boxes with different border styles and spacing. -->
+
+    <h2 class="text-2xl text-center font-bold">
+        Border Styles
+    </h2>
+
+    <div class="flex justify-center gap-6 mt-6 mb-10">
+
+        <div class="border border-black p-6">
+            Solid
+        </div>
+
+        <div class="border-4 border-dashed border-blue-500 p-6">
+            Dashed
+        </div>
+
+        <div class="border-4 border-dotted border-red-500 p-6">
+            Dotted
+        </div>
+
+    </div>
+    <!-- 6. Create 3 cards each using a different shadow depth. -->
+
+    <hr class="my-8">
+
+    <h2 class="text-2xl font-bold text-center">
+        Shadow Cards
+    </h2>
+
+    <div class="flex justify-center gap-6 mt-6">
+
+        <div class="w-52 p-6 border shadow-sm">
+            Small Shadow
+        </div>
+
+        <div class="w-52 p-6 border shadow-md">
+            Medium Shadow
+        </div>
+
+        <div class="w-52 p-6 border shadow-xl">
+            Large Shadow
+        </div>
+
+    </div>
+
+
+    <!-- 8. Create 3 images, each with a different filter, and remove the filter on hover. -->
+
+    <hr class="my-8">
+
+    <h2 class="text-2xl font-bold text-center">
+        Image Filters
+    </h2>
+
+    <div class="flex justify-center gap-6 mt-6">
+
+        <img src="https://picsum.photos/200/150?1" class="grayscale hover:grayscale-0">
+
+        <img src="https://picsum.photos/200/150?2" class="blur-sm hover:blur-none">
+
+        <img src="https://picsum.photos/200/150?3" class="brightness-50 hover:brightness-100">
+
+    </div>
+
+    <!-- 9. Create a div with a pulsing animated gradient. -->
+
+    <hr class="my-8">
+
+    <div
+        class="w-80 h-40 mx-auto rounded-lg bg-gradient-to-r from-pink-500 to-purple-600 animate-pulse flex items-center justify-center">
+
+        <h2 class="text-white text-2xl font-bold">
+            Animated Box
+        </h2>
+
+    </div>
+
+    <!-- 10. Create a layout showing horizontal and vertical separator lines. -->
+
+    <hr class="my-8">
+
+    <h2 class="text-2xl font-bold text-center">
+        Separator Lines
+    </h2>
+
+    <div class="flex justify-center items-center mt-6">
+
+        <div class="p-4">
+            Left
+        </div>
+
+        <div class="border-l h-16 mx-6"></div>
+
+        <div class="p-4">
+            Right
+        </div>
+
+    </div>
+
+    <div class="border-t my-8"></div>
+
+    <!-- 11. Create a card that increases its ring size when hovered. -->
+
+    <h2 class="text-2xl font-bold text-center">
+        Hover Ring Card
+    </h2>
+
+    <div class="w-72 mx-auto p-6 border ring-1 hover:ring-4 mt-6">
+
+        <h3 class="text-xl font-bold">
+            Tailwind Card
+        </h3>
+
+        <p class="mt-2">
+            Hover to increase the ring size.
+        </p>
+
+    </div>
+
+    <!-- 12. Make a card that lifts upward when hovered with shadow increase. -->
+
+    <hr class="my-8">
+
+    <h2 class="text-2xl font-bold text-center">
+        Hover Lift Card
+    </h2>
+
+    <div class="w-72 mx-auto p-6 border shadow-md hover:-translate-y-2 hover:shadow-xl transition mt-6 mb-10">
+
+        <h3 class="text-xl font-bold">
+            Product Card
+        </h3>
+
+        <p class="mt-2">
+            Hover over this card to see the lift effect.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
